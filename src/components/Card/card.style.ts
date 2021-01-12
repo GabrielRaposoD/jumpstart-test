@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MdMoreVert } from 'react-icons/md';
 
 const CardStyle = styled.div`
   position: relative;
@@ -67,6 +68,22 @@ const CardIcon = styled.img`
   height: 26px;
 `;
 
+const MenuIconWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 16px;
+  margin-right: 14px;
+  border: 1px solid #f1f4f6;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+`;
+
+const MenuIcon = styled(MdMoreVert)`
+  color: rgba(52, 61, 72, 0.5);
+`;
+
 export {
   CardStyle,
   CardTitle,
@@ -74,4 +91,6 @@ export {
   CardDescription,
   CardIconWrapper,
   CardIcon,
+  MenuIcon,
+  MenuIconWrapper,
 };
