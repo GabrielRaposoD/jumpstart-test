@@ -5,6 +5,8 @@ import { useState } from 'react';
 import {
   CardButton,
   CardDescription,
+  CardIcon,
+  CardIconWrapper,
   CardStyle,
   CardTitle,
 } from './card.style';
@@ -12,18 +14,12 @@ import {
 // Interfaces
 import { CardProps } from './types';
 
-const Card: React.FC<CardProps> = ({ title, description, icon }) => {
-  const [isOpen, setOpen] = useState<boolean>(false);
-
+const Card: React.FC<CardProps> = ({ title, description }) => {
   return (
     <CardStyle>
-      {/* <div className={'card-image-container ' + styles.cardImageContainer}>
-        <img
-          className={'card-image ' + styles.cardImage}
-          src={icon}
-          alt='Card icon'
-        />
-      </div> */}
+      <CardIconWrapper>
+        <CardIcon src='/img/card_icon.png' />
+      </CardIconWrapper>
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
       <CardButton>View document</CardButton>

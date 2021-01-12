@@ -51,4 +51,27 @@ const CardButton = styled.button`
   color: #8c14fc;
 `;
 
-export { CardStyle, CardTitle, CardButton, CardDescription };
+const CardIconWrapper = styled.div`
+  background-color: #fededd;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const CardIcon = styled.img`
+  user-select: none;
+  width: 25px;
+  height: 26px;
+`;
+
+export {
+  CardStyle,
+  CardTitle,
+  CardButton,
+  CardDescription,
+  CardIconWrapper,
+  CardIcon,
+};
