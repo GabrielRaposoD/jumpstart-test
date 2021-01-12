@@ -3,6 +3,7 @@ import { FC } from 'react';
 import type { AppProps } from 'next/app';
 
 // Styles
+import '@css/tailwind.css';
 import '@css/main.css';
 import '@css/fonts.css';
 

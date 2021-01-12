@@ -1,16 +1,28 @@
 import { NextSeo } from 'next-seo';
-import { HelloWorld } from '@components/index';
+import { Card, CardWrapper, PageWrapper, Title } from '@components/index';
 
 export default function Index() {
   return (
     <>
-      <NextSeo
-        title='Exsign Studio'
-        description='Uma equipe de designers e desenvolvedores de ponta com o objetivo de trazer a experiência e design que seus usuários merecem.'
-      />
-      <div className=' flex flex-col items-center justify-center min-h-screen overflow-hidden bg-gray-200'>
-        <HelloWorld className='text-4xl font-semibold'>Hello World</HelloWorld>
-      </div>
+      <NextSeo title='Jumpstart Test' description='Jumpstart Test' />
+      <PageWrapper>
+        <CardWrapper>
+          <Title>Default State</Title>
+          <Card
+            title='Corporate Bylaws'
+            description='An internal document that details the operating rules for the corporation and are typically adopted at the organizational meeting of the board of directors'
+            icon=''
+          />
+        </CardWrapper>
+        <CardWrapper>
+          <Title>Hover State</Title>
+          <Card
+            title='Corporate Bylaws'
+            description='An internal document that details the operating rules for the corporation and are typically adopted at the organizational meeting of the board of directors'
+            icon=''
+          />
+        </CardWrapper>
+      </PageWrapper>
     </>
   );
 }
